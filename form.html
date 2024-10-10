@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* Menghilangkan tanda panah di input number */
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        input[type=number] {
+        -moz-appearance: textfield; /* Untuk Firefox */
+        }
+    </style>
+</head>
+<body>
+    <div class="container-xl">
+        <nav class="navbar sticky-top bg-dark border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="logoAnime.png" alt="logo" width="45" height="45" class="d-inline-block align-text-center">
+                    MyAnime
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Daftar Anime</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Jadwal Rilis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Genre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fans Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Request</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="row ms-auto">
+            <div class="col-2 mt-0 bg-dark bg-opacity-75 text-white">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ONGOING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BATCH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MOVIE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-10 ps-5 pt-3 pe-0">
+                <h1>Tambah Anime</h1>
+                <div class="form">
+                    <div class="mb-3">
+                        <label for="judul" class="form-label">Judul</label>
+                        <input type="text" class="form-control" id="judul" placeholder="Naruto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="durasi" class="form-label">Durasi</label>
+                        <input type="number" class="form-control" id="Durasi" placeholder="90">
+                    </div>
+                    <div class="mb-3">
+                        <label for="resolusi" class="form-label">Resolusi</label>
+                        <select class="form-select">
+                            <option value="">Select</option>
+                            <option value="1">144p</option>
+                            <option value="2">240p</option>
+                            <option value="3">360p</option>
+                            <option value="4">480p</option>
+                            <option value="5">720p</option>
+                            <option value="6">1080p (HD)</option>
+                            <option value="8">1440p (2k)</option>
+                            <option value="7">2160p (4k)</option>
+                            <option value="7">4320p (8k)</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="formFileMultiple" class="form-label">Thumbnail</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                    </div>
+                    <div class="mb-3">
+                        <label for="rating" class="form-label">Rating</label>
+                        <input type="number" class="form-control" id="rating" placeholder="4.2" max="5" min="1">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="judul" class="form-label">Judul</label>
+                        <input type="date" class="form-control" id="judul" placeholder="Naruto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="resolusi" class="form-label">Genre</label>
+                        <select class="form-select">
+                            <option value="">Select</option>
+                            <option value="1">Action</option>
+                            <option value="2">Slice of life</option>
+                            <option value="3">Isekai</option>
+                            <option value="4">School</option>
+                            <option value="5">Comedy</option>
+                            <option value="6">Horror</option>
+                            <option value="8">Romance</option>
+                            <option value="7">Survival</option>
+                            <option value="7">Magic</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Sinopsis</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <style src="js/bootstrap.min.js"></style>
+</body>
+</html>
